@@ -102,6 +102,61 @@ ul {
   margin-left: 0;
 }
 
+.recipe-content ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-left: 0;
+}
+
+.recipe-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.recipe-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.75rem;
+  background: #fff;
+  border: 1px solid #d8cfc2;
+  border-radius: 20px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.recipe-hero img {
+  flex: 0 0 420px;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.recipe-hero-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+.recipe-hero-text h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .recipe-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .recipe-hero-text {
+    min-width: unset;
+  }
+}
+
 @media (max-width: 600px) {
   body {
     padding: 0.5rem;
